@@ -1,9 +1,11 @@
 
-export const getInfo = (object) => {
+const getInfo = (object) => {
     if (object) {
         return Object.values(object)
         .map(e => e.name ? e.name : e).join(', ')
     } else {
-        return 'none'
+        return 'none'; 
     }
 }
+
+export default getInfo; 
